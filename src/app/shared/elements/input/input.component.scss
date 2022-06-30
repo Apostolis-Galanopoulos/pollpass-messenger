@@ -1,0 +1,13 @@
+:host input {
+    border: solid 2px #d1d9e8;
+    border-radius: 4px;
+    color: #1c2338;
+    padding: 10px 14px;
+    width: 85%;
+
+    &:active,
+    &:focus {
+        border-color: #7256fc;
+        outline: none;
+    }
+}

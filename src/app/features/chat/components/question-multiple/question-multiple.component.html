@@ -1,0 +1,6 @@
+<div  [formGroup]="form">
+    <div class="checkboxes" >
+    <ng-container  class="checkboxes" *ngFor="let option of message.question_options; let i = index">
+        <pm-checkbox (click)="clicked(option)" [label]="option.name_html" [formControlNameValue]="option.id"> </pm-checkbox>
+  </ng-container>
+</div>

@@ -1,0 +1,26 @@
+.pm-navbar-container {
+    background-color: #fff;
+    border-bottom: 5px solid #ebeff8;
+    height: 74px;
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s linear;
+    width: 100%;
+    z-index: 1010;
+
+    .pm-navbar {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .logo {
+            line-height: 50px;
+            padding: 12px;
+            width: 70px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<div  class="bubble">
+  <div
+    class="message"
+    [ngClass]="{
+      left: message.kind === kind.statement || message.kind === kind.questionDone,
+      right:  message.kind === kind.answerView
+    }"
+  >
+    <ng-template pmMessageAnchor></ng-template>
+  </div>
+</div>

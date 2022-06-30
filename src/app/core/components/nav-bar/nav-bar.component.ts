@@ -1,0 +1,12 @@
+import {
+  ChangeDetectionStrategy,
+  Component,
+} from '@angular/core';
+
+@Component({
+  selector: 'pm-nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class NavBarComponent {}

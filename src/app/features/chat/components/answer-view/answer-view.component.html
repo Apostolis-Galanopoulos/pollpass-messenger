@@ -1,0 +1,4 @@
+<ng-container *ngFor="let answer of message.answers; trackBy: trackByFn">
+  <div *ngIf="answer.value" [innerHTML]="answer.value | pipeSafeHtml"></div>
+  <div *ngIf="!answer.value" [innerHTML]="answer.name_html | pipeSafeHtml"></div>
+</ng-container>

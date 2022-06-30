@@ -1,0 +1,8 @@
+<div class="messages-container container">
+  <ng-container *ngFor="let message of (messages$ | async); trackBy: trackByFn">
+    <pm-message class="pm-chat-message message-container" [message]="message"></pm-message>
+  </ng-container>
+</div>
+<div *ngIf="submitted" class="submit-button">
+  <pm-button (clicked)="submit()" name="Submit"></pm-button>
+</div>

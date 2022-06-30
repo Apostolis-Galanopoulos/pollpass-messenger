@@ -1,0 +1,12 @@
+.form-group {
+    display: flex;
+    flex-direction: row;
+
+    .item-one {
+        flex-grow: 2;
+    }
+
+    .item-two {
+        flex-grow: 1;
+    }
+}

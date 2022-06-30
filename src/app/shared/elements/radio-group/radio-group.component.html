@@ -1,0 +1,10 @@
+<mat-radio-group>
+  <mat-radio-button
+    (click)="click(option)"
+    class="radio-buttons"
+    *ngFor="let option of options; let i = index"
+    [value]="option.key"
+  >
+    <span [innerHTML]="option.value | pipeSafeHtml"></span>
+  </mat-radio-button>
+</mat-radio-group>

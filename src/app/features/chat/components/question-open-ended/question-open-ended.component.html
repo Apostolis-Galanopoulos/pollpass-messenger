@@ -1,0 +1,6 @@
+<div [formGroup]="form" class="form-group">
+  <ng-container *ngFor="let option of message.question_options; let i = index">
+    <pm-input class="item-one" [placeholder]="option.name_html" formControlNameValue="input"> </pm-input>
+    <pm-button class="item-two" *ngIf="form.valid" name="Send" (clicked)="update(option)"></pm-button>
+ </ng-container>
+</div>
